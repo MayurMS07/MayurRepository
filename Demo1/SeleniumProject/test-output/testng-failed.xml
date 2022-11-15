@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RunTimeRetryFailedTC]">
+  <listeners>
+    <listener class-name="runFailedTCTestNg.DemoTransformer"/>
+  </listeners>
+  <test thread-count="5" name="RetryTest(failed)">
+    <classes>
+      <class name="runFailedTCTestNg.SampleTestCase">
+        <methods>
+          <include name="testCase1"/>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- runFailedTCTestNg.SampleTestCase -->
+    </classes>
+  </test> <!-- RetryTest(failed) -->
+</suite> <!-- Failed suite [RunTimeRetryFailedTC] -->
